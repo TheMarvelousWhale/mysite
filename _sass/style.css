@@ -1,0 +1,161 @@
+body {
+  color: #ddd;
+  background: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+}
+
+.header-link {
+  margin: 1rem;
+  border-bottom: 3px solid #c55e00;
+  font-size: 1.2rem;
+  color: #222;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.header-text {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.brand {
+  margin: 0;
+  color: #fff;
+}
+
+.brand-text {
+  color: #c55e00;
+}
+
+.landing-section {
+  min-height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 80vw;
+}
+
+.landing-main {
+  background: white url("./background_image.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  
+}
+
+.landing-section-content {
+  padding: 2rem 2rem;
+  background: rgba(4, 52, 82, 0.678);
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ddd;
+}
+
+.text-box {
+  text-align: justify;
+  width:40vw;
+}
+
+
+.instruction-section {
+  padding: 2rem 2rem;
+  background: rgba(82, 29, 4, 0.678);
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ddd;
+}
+
+.timeline-main {
+  padding:2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("./check.jpg") no-repeat center center fixed;
+}
+
+.timeline {
+  
+  color: #ddd;
+  width:90vw;
+
+
+}
+
+
+#end {
+  display: flex;
+  height:10vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(27, 25, 25, 0.918)	
+}
+
+
+
+.btn-group > button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group > button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group > button:hover {
+  background-color: #3e8e41;
+}

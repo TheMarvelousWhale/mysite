@@ -10,35 +10,73 @@
 
 <body>
 
-<title>Whale whale whale</title>
+<title>V2VsY29tZSB0byBNeXNpdGU=</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="static/style.css">
 <link rel="stylesheet" type="text/css" href="static/timeline_style.css">
 
-<section class="landing-section landing-main" >
+<script>
+  function toggle(classname) {
+    var x = document.getElementsByClassName(classname);
+    for (var i = 0;i<x.length;i++){
+      if (x[i].style.display === "none") {
+        x[i].style.display = "block";
+      } else {
+        x[i].style.display = "none";
+      }
+    }
+} 
+ 
+
+</script>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="https://github.com/TheMarvelousWhale">Github</a>
+</div> 
+
+<section class="landing-main" >
   <div class="landing-section-content">
+    
     <div class="text-box">
-      <p>Well, hello and I don't know who you are.... May be you are a recruiter, a friend or even a tumbling
-        stranger perhaps? Fret not, I treat everyone the same so let's get to know each other</p>
-      <p >Here is three things about me:</p>
+      <h1>Hi</h1>
+      <p>Well, hello and I don't know who you are....<br> May be you are a recruiter, a friend or even a tumbling
+        stranger perhaps? <br>Fret not, I treat everyone the same so let's get to know each other</p>
+      <p >Here are three things about me:</p>
       <ol>
         <li>I suppose I can code</li>
         <li>I like coffee, not tea</li>
-        <li>Nice to meet you here</li>
+        <li>There is an obfuscated js that will allow you to see more than a resume</li>
       </ol>
+      
     </div>
+    
   </div>
 </section>
 
-<section id = 'end'>
+
+
+<section id="end">
     <p>Here is my learning timeline!</p>
+
+<!--
+    <div class="btn-group">
+      <button onclick="toggle('general-programming')">General</button>
+      <button onclick='toggle("NTU_CE")'>NTU CE</button>
+      <button onclick='toggle("NTU_NBS")'>NTU NBS</button>
+      <button onclick='toggle("misc")'>Miscellanous</button>
+      <button onclick='toggle("work")'>Work-related</button>
+    </div>
+-->
 </section>
 
 <section class = "timeline-main">
   
     <div class="timeline">
+      
       <div class="container left">
         <div class="content">
           <h2>2018</h2>
@@ -94,13 +132,16 @@
           <p class="NTU_CE">[<span>FYP</span>]: Intent Classification and Context realization in Pytorch Chatbot</p>
           <p class="work">[<span>KPMG</span>]: Cyberanalyst Intern</p>
         </div>
+        
       </div>
 
+      
+    
     </div> 
 </section>
 
 <section id = 'end'>
-       <p>This is the end of the page</p>
+       <p>This is the end of my site</p>
 </section>
 
 
