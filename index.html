@@ -11,7 +11,7 @@
 <body>
 
 <title>Welcome to Viet's site</title>
-
+<link rel="shortcut icon" type="image/jpg" href="static/icon.jpg"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="static/style.css">
@@ -34,23 +34,20 @@
 
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a>
+  <a href="mailto:sosig.catto.dev@gmail.com">Contact</a>
   <a href="https://github.com/TheMarvelousWhale">Github</a>
 </div> 
 
-<section class="landing-main" >
-  <div class="landing-section-content">
+<section class="landing-background" >
+  <div class="landing-content">
     
     <div class="text-box">
-      <h1>Hi</h1>
-      <p>Well, hello and I don't know who you are....<br> May be you are a recruiter, a friend or even a tumbling
+      <h1>Hi~</h1>
+      <br>
+      <p>Well, hello and I don't know who you are....<br><br> May be you are a recruiter, a friend or even a tumbling
         stranger perhaps? <br>Fret not, I treat everyone the same so let's get to know each other</p>
-      <p >Here are three things about me:</p>
-      <ol>
-        <li>I study computers, analyze malwares for fun and build NLP-related models for work</li>
-        <li>I like coffee, not tea</li>
-        <li>I like cats</li>
-      </ol>
+      <br>
+      <p>This site is for me to document my learning journey. You can always see more in my github repo!</p>
       
     </div>
     
@@ -59,78 +56,110 @@
 
 
 
-<section id="end">
+<section class="banner">
+  <div class="control">
     <p>Here is my learning timeline!</p>
+    <p>(„• ֊ •„)  You can click on the buttons to toggle the categories  („• ֊ •„)  </p>
 
-
+    
     <div class="btn-group">
-      <button onclick="toggle('general-programming')">General</button>
+      <button onclick="toggle('General')">General</button>
       <button onclick='toggle("NTU_CE")'>NTU CE</button>
       <button onclick='toggle("NTU_NBS")'>NTU NBS</button>
-      <button onclick='toggle("misc")'>Miscellanous</button>
-      <button onclick='toggle("work")'>Work-related</button>
+      <button onclick='toggle("Internships")'>Internships</button>
+      <button onclick='toggle("Work")'>Work</button>
+      <button onclick='toggle("Others")'>Others</button>
     </div>
-
+    
+  </div>
 </section>
 
 <section class = "timeline-main">
   
     <div class="timeline">
       
-      <div class="container left">
-        <div class="content">
+      <div class="timeline-container left">
+        <div class="year-content">
           <h2>2018</h2>
-          <p class="general-programming">[<span>General</span>]: Started programming with Python on 6.00.1x@EdX</p>
+          <p class="General">[<span>General</span>]: Started programming with Python on 6.00.1x@EdX</p>
+          <p class="General">[<span>General</span>]: Started basic web (html,css,js) with CodeAcademy</p>
           <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Python</p>
           <p class="NTU_NBS">[<span>NTU_NBS</span>]: Learned Financial Management, Accounting</p>
-          <p class="misc">[<span>Hackathon</span>]: Participated in iNTUition 2018</p>
-          <p class="general-programming">[<span>General</span>]: Built Snake Xenzia game on SenseHat</p>
+          <p class="Others">[<span>Hackathon</span>]: Participated in iNTUition 2018</p>
+          <p class="General">[<span>General</span>]: Built Snake Xenzia game on SenseHat</p>
           <p></p>
         </div>
       </div>
 
-      <div class="container right">
-        <div class="content">
+      <div class="timeline-container right">
+        <div class="year-content">
           <h2>2019</h2>
           <p class="NTU_CE">[<span>NTU_CE</span>]: Learned C, Verilog, Data Structure, Basic ML, Computer Architecture</p>
-          <p class="general-programming">[<span>General</span>]: Built auto-form answer with Selenium</p>
+          <p class="General">[<span>General</span>]: Built auto form-answer bot with Selenium</p>
           <p class="NTU_NBS">[<span>NTU_NBS</span>]: Learned Logistics, Marketing, HR</p>
-          <p class="work">[<span>Chatbot</span>]: Build Lyon Chatbot for NTU with Dialogflow</p>
-          <p class="general-programming">[<span>RPA</span>]:Learned UIPath for Windows process Automation</p>
-          <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Algo, OOP, MicroProcessor, Advanced Computer Architecture, OS</p>
-          <p class="cybersec">[<span>CTF</span>]: Participated in NTU Hack 2019</p>
-          <p class="work">[<span>Chatbot</span>]: Designed multi-agent system for chatbot scalability on Dialogflow</p>
+          <p class="Internships">[<span>Chatbot</span>]: Build Lyon Chatbot for NTU with Dialogflow</p>
+          <p class="General">[<span>RPA</span>]: Learned UIPath for Windows process Automation</p>
+          <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Algorithm, OOP, MicroProcessor, Advanced Computer Architecture, OS</p>
+          <p class="Others">[<span>CTF</span>]: Participated in NTU Hack 2019, started taking interest in Othersurity</p>
+          <p class="Internships">[<span>Chatbot</span>]: Designed multi-agent system for chatbot scalability on Dialogflow</p>
           
         </div>
       </div>
     
-      <div class="container left">
-        <div class="content">
+      <div class="timeline-container left">
+        <div class="year-content">
           <h2>2020</h2>
-          <p class="general-programming">[<span>General</span>]: Built Youtube bot and custom crawler on Selenium</p>
-          <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Networks, MicroController, Advanced Verilog & FPGA</p>
-          <p class="misc">[<span>Gig</span>]: Interfacing NTU Bus API into NTU App</p>
-          <p class="misc">[<span>ML things</span>]: Completed Coursera Machine Learning Specialization</p>
-          <p class="cybersec">[<span>CyberSec</span>]: Completed CompTia PenTest+ Course on LinkedinLearning </p>
-          <p class="misc">[<span>Hackathon</span>]: Participated in SCDFxIBM Hackathon</p>
+          <p class="General">[<span>General</span>]: Built Youtube bot and Custom Data Crawler on Selenium</p>
+          <p class="NTU_CE">[<span>NTU_CE</span>]: Learned NetInternshipss, MicroController, Advanced Verilog & FPGA</p>
+          <p class="Others">[<span>Summer Gig</span>]: Interfacing NTU Bus API into NTU App</p>
+          <p class="Others">[<span>ML things</span>]: Completed Coursera Machine Learning Specialization</p>
+          <p class="Others">[<span>Others</span>]: Completed CompTia PenTest+ Course on LinkedinLearning </p>
+          <p class="Others">[<span>Hackathon</span>]: Participated in SCDFxIBM Hackathon</p>
           <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Digital Communication, Maze-solver on Arduino (Group project)</p>
-          <p class="cybersec">[<span>CyberSec</span>]: Had fun with Nebula, Phoenix and DVWA </p>
+          <p class="Others">[<span>Others</span>]: Had fun with Nebula, Phoenix and DVWA </p>
           <p class="NTU_NBS">[<span>NTU_NBS</span>]: Learned Business Law, Investment</p>
-          <p class="work">[<span>A*STAR</span>]: Temp Staff@I2R, work with Kaldi for ASR system</p>
-          <p class="misc">[<span>CTF</span>]: Participated in GovTech 2020 CTF, ranked 31/250</p>
-          <p class="cybersec">[<span>Cybersec</span>]:Joined HackTheBox</p>
-          <p class="general-programming">[<span>General</span>]: Dialogflow automation with Selenium</p>
-          <p class="general-programming">[<span>General</span>]: Large corpus text crawling with newspaper3k and wikidump</p>
+          <p class="Internships">[<span>A*STAR</span>]: Temp Staff@I2R, Internships with Kaldi for ASR system. 
+            Run experiments with Kaldi and improve the lexicon for the engine</p>
+          <p class="Others">[<span>CTF</span>]: Participated in GovTech 2020 CTF, ranked 31/250</p>
+          <p class="Others">[<span>Others</span>]: Joined HackTheBox, studied the HTB Academy free courses</p>
+          <p class="General">[<span>General</span>]: Dialogflow automation with Selenium</p>
+          <p class="General">[<span>General</span>]: Large corpus text crawling with newspaper3k and wikidump</p>
         </div>
       </div>
     
-      <div class="container right">
-        <div class="content">
+      <div class="timeline-container right">
+        <div class="year-content">
           <h2>2021</h2>
-          <p class="misc">[<span>ML things</span>]: Completed Coursera Natural Language Processing Specialization</p>
+          <p class="Others">[<span>Others</span>]: Attended SINCON2021, learned a bunch of new tech</p>
+          <p class="Others">[<span>ML things</span>]: Completed Coursera Natural Language Processing Specialization</p>
           <p class="NTU_CE">[<span>NTU_CE</span>]: Learned Distributed System , Digital Signal Processing and Malware Analysis</p>
+          <p class="Others">[<span>Others</span>]: Studied Malware Analysis with Honig book and Malware Unicorn</p>
           <p class="NTU_CE">[<span>FYP</span>]: Intent Classification and Context realization in Pytorch Chatbot</p>
-          <p class="work">[<span>KPMG</span>]: I need an internship like real quick</p>
+          <p class="NTU_NBS">[<span>NTU_NBS</span>]: Studied Market Intelligence</p>
+          <p class="Internships">[<span>KPMG</span>]: Deferred an internship with KPMG as CyberAnalyst from 2020, ultimately rejected the offer</p>
+          <p class="Internships">[<span>ByteDance</span>]: Joined ByteDance as NLP Engineer Intern from May 2021 - July 2021. Worked on MWP and engineered the layout addition to Bart</p>
+          <p class="NTU_CE">[<span>FYP</span>]: Changed FYP to Synthetic Word Embeddings</p>
+          <p class="NTU_NBS">[<span>NTU_NBS</span>]: Studied Market Behaviour, worked on a project with TBWA on an airline case</p>
+          <p class="NTU_CE">[<span>NTU_CE</span>]: Studied Blockchain, NLP. Internship already taught me alot about SOTA NLP models</p>
+          <p class="NTU_CE">[<span>NTU_CE</span>]: Studied Solidity, wrote the Backend for a Liquidity Mining contract, with NFT Rewards feature</p>
+          <p class="Others">[<span>NTU</span>]: Took Digital Photography as UE, final project in ADM Exhibition</p>
+          <p class="Others">[<span>Others</span>]: Hold a workshop on Malware Analysis</p>
+          <p class="General">[<span>General</span>]: Learned MERN stack, build the Tinder for Cat app with Firebase (WIP) </p>
+          <p class="Others">[<span>Others</span>]: Learned Database (CZ2007) and Advanced Database (Cz4103) from Chiayu</p>
+          <p class="General">[<span>General</span>]: Learned System Design from  Donne Martin github and Harvard CS75 Series</p>
+          <p class="Sad">[<span>Sad & Stress Days</span>]: Failed a lot of job interviews :')</p>
+          <p class="General">[<span>General</span>]: Learnning Go, Django, Kafka, Redis, continue to improve DB & SysDes knowledge</p>
+          <p class="General">[<span>General</span>]: Learnning Docker and K8s from Viblo</p>
+          <p class="General">[<span>General</span>]: Learning TypeScript, continue to do more pet project with MERN (still one of my favourite stack!)</p>
+          <p class="NTU_CE">[<span>NTU_CE</span>]: Graduated from NTU :')</p>
+        </div>
+        
+      </div>
+
+      <div class="timeline-container left">
+        <div class="year-content">
+          <h2>2022</h2>
+          <p class="Work">[<span>Shopee</span>]: Joining Shopee as a Backend Engineer</p>
         </div>
         
       </div>
@@ -140,8 +169,8 @@
     </div> 
 </section>
 
-<section id = 'end'>
-       <p>This is the end of my site</p>
+<section class="banner">
+       <p>Have any questions? Drop me an email at sosig.catto.dev@gmail.com :></p>
 </section>
 
 

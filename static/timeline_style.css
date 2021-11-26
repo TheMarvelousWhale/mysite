@@ -1,14 +1,14 @@
-
+/*The timeline has its own css so it's easier to handle*/
 
 /**Git containter colour and visibility*/
-.general-programming {
+.General {
   visibility: visible;
 }
-.general-programming > span {
+.General > span {
     color:aqua;
 }
 
-.work > span {
+.Internships> span {
     color: lightsalmon;
 }
 
@@ -20,12 +20,16 @@
     color: lightskyblue;
 }
 
-.misc > span {
+.Others > span {
     color:rgb(255, 142, 159);
 }
 
-.cybersec > span {
-    color:rgb(172, 24, 172);
+.Work > span {
+  color:darkorange;
+}
+
+.Sad > span {
+    color:red;
 }
 /***********************************************************/
 
@@ -61,7 +65,7 @@
   }
   
   /* Container around content */
-  .container {
+  .timeline-container {
     
     box-sizing: border-box;
     padding: 10px 40px;
@@ -70,7 +74,7 @@
   }
   
   /* The circles on the timeline */
-  .container::after {
+  .timeline-container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -127,7 +131,7 @@
   }
   
   /* The actual content */
-  .content {
+  .year-content {
     padding: 20px 30px;
     background-color: rgba(0, 0, 0, 0.87);
     position: relative;
@@ -142,14 +146,14 @@
     }
     
     /* Full-width containers */
-    .container {
+    .timeline-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
     }
     
     /* Make sure that all arrows are pointing leftwards */
-    .container::before {
+    .timeline-container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
