@@ -466,6 +466,46 @@ export default function ResumePage({ src }) {
           color: #edfaff;
         }
 
+        @media (max-width: 800px) {
+          .resume-portrait { display: none; }
+          .resume-stack {
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            width: auto;
+            height: 36vh;
+          }
+          .resume-list-tag { font-size: 34px; margin: 0 0 4px 8px; }
+          .resume-card { height: 74px; }
+          .resume-title { font-size: 22px; }
+          .resume-badge { width: 36px; height: 44px; top: 8px; left: -4px; }
+          .resume-badge-text { font-size: 22px; }
+          .resume-card-inner { padding: 8px 12px 26px 40px; }
+          .resume-subtitle { font-size: 13px; }
+          .resume-subtitle-bar { left: 44px; height: 18px; }
+          .resume-detail-panel {
+            top: auto;
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+            width: auto;
+            height: 58vh;
+            padding: 12px;
+          }
+          .resume-detail-top {
+            min-height: 56px;
+            gap: 8px;
+            grid-template-columns: 36px 1fr auto;
+          }
+          .resume-detail-top-index,
+          .resume-detail-top-title,
+          .resume-detail-top-progress { font-size: 26px; }
+          .resume-detail-row { min-height: 52px; padding: 8px 10px; }
+          .resume-detail-row-title { font-size: 15px; }
+          .tl-modal { padding: 18px 16px; }
+          .tl-modal-title { font-size: 22px; }
+        }
+
       `}</style>
 
       <div className="resume-overlay">

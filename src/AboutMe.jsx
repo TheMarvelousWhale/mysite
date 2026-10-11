@@ -549,6 +549,71 @@ export default function AboutMe() {
           border-radius: 3px;
           padding: 1px 6px; font-size: 11px;
         }
+
+        @media (max-width: 800px) {
+          .sc-root {
+            justify-content: flex-start;
+            padding-top: 54vh;
+            gap: 6px;
+          }
+          .sc-bar,
+          .sc-bar-red { width: 94vw; }
+          .sc-bar { height: 48px; }
+          .sc-bar-outer.active .sc-bar,
+          .sc-bar-outer.active .sc-bar-red { height: 58px; }
+          .sc-char { display: none; }
+          .sc-role {
+            font-size: 22px;
+            transform: none;
+            padding: 0 8px;
+          }
+          .sc-main { padding-left: 0; }
+          .sc-label { font-size: 20px; letter-spacing: 2px; }
+          .sc-main-portrait-shell {
+            top: auto;
+            bottom: 0;
+            right: 0;
+            width: 42vw;
+            height: 36vh;
+            z-index: 8;
+          }
+          .sc-right-nav {
+            top: 3vh;
+            left: 4vw;
+            transform: none;
+          }
+          .sc-right-nav .sc-nav-btn { font-size: 40px; }
+          .sc-reveal-panel {
+            top: auto;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 26vh;
+            transform: none;
+            clip-path: none;
+          }
+          .sc-reveal-panel.mounted { transform: none; opacity: 0.96; }
+          .sc-reveal-upper-bar {
+            top: 8%;
+            height: auto;
+            min-height: 0;
+            padding: 14px 18px;
+          }
+          .sc-reveal-upper-line {
+            font-size: 14px;
+            line-height: 1.35;
+            padding: 0 8px;
+          }
+          .sc-reveal-lower-bar {
+            top: auto;
+            bottom: 10%;
+            width: 78%;
+            height: auto;
+            min-height: 40px;
+            font-size: 16px;
+          }
+          .sc-footer { display: none; }
+        }
       `}</style>
 
       <div className="sc-root" role="navigation">
@@ -557,7 +622,11 @@ export default function AboutMe() {
             key={item.id}
             className={`sc-bar-outer${active === i ? " active" : ""}${mounted ? " mounted" : ""}`}
             onClick={() => {
-              setActive(i);
+              if (active === i) setRevealed(true);
+              else {
+                setActive(i);
+                setRevealed(false);
+              }
             }}
             onMouseEnter={() => {
               setActive(i);

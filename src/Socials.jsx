@@ -464,6 +464,20 @@ export default function Socials() {
           border-radius: 3px;
           padding: 1px 6px; font-size: 11px;
         }
+
+        @media (max-width: 800px) {
+          .sc-root { width: 100%; }
+          .sc-bar,
+          .sc-bar-red { width: 92vw; }
+          .sc-bar { height: 58px; }
+          .sc-bar-outer.active .sc-bar,
+          .sc-bar-outer.active .sc-bar-red { height: 74px; }
+          .sc-label { font-size: 28px; letter-spacing: 2px; }
+          .sc-right-nav { top: 16px; right: 10px; }
+          .sc-right-nav .sc-nav-btn { font-size: 46px; }
+          .sc-info-bar-wrap { left: 8%; top: 78px; height: 40px; }
+          .sc-footer { display: none; }
+        }
       `}</style>
 
       <div className="sc-root" role="navigation">

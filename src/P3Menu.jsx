@@ -231,6 +231,26 @@ export default function P3Menu({ onNavigate }) {
           user-select: none;
           pointer-events: none;
         }
+
+        @media (max-width: 800px) {
+          .p3-name-tag {
+            top: 12px;
+            left: 14px;
+            font-size: 26px;
+          }
+          .p3-menu {
+            gap: 6px;
+            transform: translateY(-40%);
+          }
+          .p3-row { height: 76px; }
+          .p3-slash { left: 0; right: 0; }
+          .p3-label {
+            font-size: 34px;
+            letter-spacing: 1px;
+            transform: none;
+          }
+          .p3-hint { display: none; }
+        }
       `}</style>
 
       <div className="p3-overlay">
